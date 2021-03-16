@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/product';
+import { ProductResponseModel } from 'src/app/models/productResponseModel';
 
 @Component({
   selector: 'app-product',
@@ -10,9 +11,15 @@ export class ProductComponent implements OnInit {
 
  
   products:Product[] = [];
+  //productResponseModel:ProductResponseModel;
   constructor() { }
 
   ngOnInit(): void {
+    console.log("Init çalıştı");
+  }
+
+  getProducts(){
+    
   }
 
 }
